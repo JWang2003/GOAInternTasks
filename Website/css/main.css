@@ -1,0 +1,260 @@
+html {
+    height: 100%;
+  }
+
+  body {
+    background-image: linear-gradient(rgb(92, 92, 250),  rgb(255, 140, 64));
+  }
+
+  .header-wrapper { 
+    border: 5px solid #ff0000;
+    color: white;
+    
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 50px;
+    text-align: center;
+  }
+    .header-title { 
+      font-size: 50px;
+      font-weight:800;
+    }
+    .header-subtitle { 
+      font-size: 20px;
+      font-weight:400;
+    }
+
+    .shapes-container { 
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+  .shapes-wrapper { 
+    display:grid;
+    border: 5px solid green;
+    width: 570px;
+    height: 570px;
+    margin-top:30px;
+    grid-template-columns: 240px 240px;
+    grid-template-rows: 200px 200px;
+    gap: 50px 20px;
+
+    align-items: space-evenly;
+    justify-content: space-evenly;
+  }
+    shape{
+      margin-top:100px;
+      display: flex;
+      border: 4px dotted lightblue;
+      align-items: center;
+      justify-content: center;
+    }
+
+    circle { 
+      grid-area: circle;
+      cursor: pointer;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      /* height:100%; */
+      border: 5px solid rgb(243, 243, 243);
+      background-image: url(../images/circle.jpeg);
+      background-repeat: no-repeat;
+    }
+    rectangle { 
+      grid-area: rectangle;
+      cursor: pointer;
+      width: 200px;
+      height: 150px;
+      /* height:100%; */
+      border: 5px solid rgb(255, 255, 255);   
+      background-image: url(../images/rectangle.jpg);
+    }
+    square { 
+      grid-area: square;
+      cursor: pointer;
+      /* width:100%; */
+      width: 200px;
+      height: 200px;
+      /* height: 100%; */
+      border: 5px solid rgb(255, 255, 255);
+      background-image: url(../images/dab.jpg);
+
+    }
+    triangle { 
+      grid-area: triangle;
+      cursor: pointer;
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid red;
+      
+      
+
+      /* height:100%; */
+    }
+      /* triangle.empty { 
+        grid-area: triangle;
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 100px solid red; */
+        /* height:100%; */
+      /* } */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.897);
+  width: 800px;
+  height: 400px;
+  max-width: 80%;
+}
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-top { 
+  display: flex;
+  justify-content:right;
+  align-items: center;
+  padding-right: 20px;
+  padding-top: 10px;
+  height:8px;
+  border: 1px solid rgb(3, 226, 255);
+}
+  .modal-top .close-button { 
+    font-size: 20px;
+    font-weight:bold;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+  }
+
+.modal-header { 
+  display: flex;
+  justify-content: center;
+  border: 2px solid red;
+  margin-bottom: 32px;
+}
+  .modal-header .title { 
+    font-size: 28px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+  }
+
+.modal-image { 
+  display: flex;
+  justify-content: center;
+  height: 250px;
+  border: 6px solid orange;
+}
+
+.image--circle {
+  border: 5px solid lightgreen;
+  width: 30%;
+  background-image: url(../images/circle.jpeg);
+  background-repeat: no-repeat;
+}
+.image--rectangle {
+  border: 5px solid lightgreen;
+  width: 30%;
+  background-image: url(../images/rectangle.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.image--square {
+  border: 5px solid lightgreen;
+  width: 30%;
+  background-image: url(../images/dab.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.image--triangle {
+  border: 5px solid lightgreen;
+  width: 30%;
+  background-image: url(../images/dab.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#overlay { 
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      /* .triangle {
+    position: relative;
+    width:0;
+    border-bottom:solid 50px black;
+    border-right:solid 30px transparent;
+    border-left:solid 30px transparent;
+}
+.triangle .empty {
+    position: absolute;
+    top:9px;
+    left:-21px;
+    width:0;
+    border-bottom:solid 36px white;
+    border-right:solid 21px transparent;
+    border-left:solid 21px transparent;
+} */
+
+
+
+
+
+/*   
+body {
+margin: 0;
+min-height: 100%;
+background-color: #fff;
+font-family: Arial, sans-serif;
+font-size: 14px;
+line-height: 20px;
+color: #333;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+  } */
+

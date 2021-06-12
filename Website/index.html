@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet"> 
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="header-wrapper">
+        <div class="header-title">Hello World</div>
+        <div class="header-subtitle">Wow! Check out all the cool CSS and javascript things I can do!</div>
+    </div>
+    <div class="shapes-container">
+        <div class="shapes-wrapper">
+            <!-- Modal Buttons -->
+            <shape>
+                <circle data-modal-target="#modal-circle" id="circle" ></circle>
+            </shape>
+            <shape>
+                <rectangle data-modal-target="#modal-rectangle"></rectangle>
+            </shape>
+            <shape>
+                <square data-modal-target="#modal-square"></square>
+            </shape>
+            <shape>
+                <triangle data-modal-target="#modal-triangle"></triangle>
+            </shape>
+        </div>
+        <div></div>
+        
+        <!-- Modals -->
+        <div class="modal" id="modal-circle">
+            <div class="modal-top">
+                <button class="close-button">&times;</button>
+            </div>
+            <div class="modal-header">
+                <div class="title">Collaboration</div>
+            </div>
+            <div class="modal-image">
+                <div class="image--circle"></div>
+            </div>    
+        </div>
+        <div class="modal" id="modal-rectangle">
+            <div class="modal-top">
+                <button class="close-button">&times;</button>
+            </div>
+            <div class="modal-header">
+                <div class="title">Rectangle</div>
+            </div>
+            <div class="modal-image">
+                <div class="image--rectangle"></div>
+            </div>    
+        </div>
+        <div class="modal" id="modal-square">
+            <div class="modal-top">
+                <button class="close-button">&times;</button>
+            </div>
+            <div class="modal-header">
+                <div class="title">Square</div>
+            </div>
+            <div class="modal-image">
+                <div class="image--square"></div>
+            </div>    
+        </div>
+        <div class="modal" id="modal-triangle">
+            <div class="modal-top">
+                <button class="close-button">&times;</button>
+            </div>
+            <div class="modal-header">
+                <div class="title">Triangle</div>
+            </div>
+            <div class="modal-image">
+                <div class="image--triangle"></div>
+            </div>    
+        </div>
+        <div id="overlay"></div>
+    </div>
+</body>
+<!-- JavaScript -->
+<script defer src="js/script.js"></script>
+
+</html>
