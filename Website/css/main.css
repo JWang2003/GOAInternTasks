@@ -216,38 +216,3 @@ html {
   pointer-events: all;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      /* .triangle {
-    position: relative;
-    width:0;
-    border-bottom:solid 50px black;
-    border-right:solid 30px transparent;
-    border-left:solid 30px transparent;
-}
-.triangle .empty {
-    position: absolute;
-    top:9px;
-    left:-21px;
-    width:0;
-    border-bottom:solid 36px white;
-    border-right:solid 21px transparent;
-    border-left:solid 21px transparent;
-} */
-
