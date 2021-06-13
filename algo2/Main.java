@@ -40,7 +40,7 @@ public class Main {
 		}
 		// sort arraylist listA elements in numerical ascending order
 		Collections.sort(listA);
-		System.out.println(listA);
+		// System.out.println(listA);
 		
 	
 		// create new arraylist listB
@@ -55,7 +55,7 @@ public class Main {
 		}	
 		// sort arraylist listB elements in numerical ascending order
 		Collections.sort(listB);
-		System.out.println(listB);
+		// System.out.println(listB);
 		
 	
 		//Create String compAtoB to answer "Numbers in array a that aren't in array b"
